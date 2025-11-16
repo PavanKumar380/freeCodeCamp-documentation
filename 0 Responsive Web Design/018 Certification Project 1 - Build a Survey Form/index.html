@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0"/>
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Chainsaw Man Survey Form</h1>
+        <p id="description">We appreciate your valuable feeback.</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name (Required):</label>
+            <input required id="name" type="text" placeholder="Enter your name"><br>
+            <label id="email-label" for="email">Email (Required):</label>
+            <input required id="email" type="email" placeholder="Enter your email"><br>
+            <label id="number-label" for="number">Age (Optional):</label>
+            <input id="number" type="number" min="3" max="100" placeholder="Age">
+            <p>What option best describes you? (Required)</p>
+            <select id="dropdown" required>
+                <option value="anime">Anime only</option>
+                <option value="manga">Manga only</option>
+                <option value="both">Both Anime and Manga</option>
+            </select>
+            <p>Would you recommend Chainsaw Man to a friend?</p>
+            <input id="definitely" name="user-recommend" type="radio" value="definitely" checked>
+            <label for="definitely">Definitely</label>
+            <input id="maybe" name="user-recommend" type="radio" value="maybe">
+            <label for="maybe">Maybe</label>
+            <input id="not-sure" name="user-recommend" type="radio" value="not-sure">
+            <label for="not-sure">Not sure</label>
+            <p>Who is/are your favourite girl/girls? (Check all that apply)</p>
+            <input id="asa" name="best-girl" type="checkbox" value="asa">
+            <label for="asa">Asa</label>
+            <input id="fami" name="best-girl" type="checkbox" value="fami">
+            <label for="fami">Fami</label>
+            <input id="fumiko" name="best-girl" type="checkbox" value="fumiko">
+            <label for="fumiko">Fumiko</label>
+            <input id="kobeni" name="best-girl" type="checkbox" value="kobeni">
+            <label for="kobeni">Kobeni</label>
+            <input id="death" name="best-girl" type="checkbox" value="death">
+            <label for="death">Lil D</label>
+            <input id="makima" name="best-girl" type="checkbox" value="makima">
+            <label for="makima">Makima</label>
+            <input id="nayuta" name="best-girl" type="checkbox" value="nayuta">
+            <label for="nayuta">Nayuta</label>
+            <input id="power" name="best-girl" type="checkbox" value="power">
+            <label for="power">Power</label>
+            <input id="quanxi" name="best-girl" type="checkbox" value="quanxi">
+            <label for="quanxi">Quanxi</label>
+            <input id="reze" name="best-girl" type="checkbox" value="reze">
+            <label for="reze">Reze</label>
+            <input id="yoru" name="best-girl" type="checkbox" value="yoru">
+            <label for="yoru">Yoru</label>
+            <p>Briefly explain why Asa is the superior girlfailure compared to Kobeni:</p>
+            <textarea id="asa-best-girl" name="asa-best-girl" placeholder="Asa best girl."></textarea><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+  </body>
+</html>
