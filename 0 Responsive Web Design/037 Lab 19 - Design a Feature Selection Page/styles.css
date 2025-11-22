@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.feature-card {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+    width: 40%;
+}
+
+.feature-card:hover {
+    border: 2px solid rgb(210, 150, 0);
+    box-shadow: 0 0 8px 2px rgb(210, 210, 0);
+}
+
+.feature-card input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+.feature-card input[type="checkbox"]:checked {
+    border: 2px solid rgb(210, 210, 0);
+    background-color: rgb(210, 210, 0);
+}
+
+.feature-card input[type="checkbox"]:checked::after {
+    content: '✓';
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
