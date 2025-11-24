@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+main {
+    background-color: gainsboro;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#img-div {
+    background-color: white;
+    padding: 10px;
+}
+
+img {
+    display: block;
+}
+
+#image {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
