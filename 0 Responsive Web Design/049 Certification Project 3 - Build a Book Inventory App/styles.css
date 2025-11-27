@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100vw;
+}
+
+thead {
+    background-image: linear-gradient(lightcyan, lightskyblue);
+}
+
+th {
+    padding: 0.3em;
+}
+
+td {
+    text-align: center;
+    padding: 0.3em;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(lightgreen, lightseagreen);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(lightgrey, grey);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(yellow, orange);
+}
+
+span {
+    display: inline-block;
+}
+
+span[class="status"] {
+    border-radius: 20%/60%;
+}
+
+span[class="status"], span[class^="rate"] {
+    height: 1.85em;
+    width: 7em;
+    padding: 0.3em;
+}
+
+tr[class="read"] span[class="status"] {
+    border: 0.1em solid green;
+    background-image: linear-gradient(lightseagreen 60%, teal);
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 0.1em solid red;
+    background-image: linear-gradient(salmon 60%, firebrick);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 0.1em solid gold;
+    background-image: linear-gradient(lightyellow, gold);
+}
+
+span[class^="rate"] > span {
+    border: 0.1em solid black;
+    border-radius: 50%;
+    background-color: lightgrey;
+    height: 100%;
+    width: 20%;
+    margin: 0.1em;
+}
+
+span[class~="one"] :first-child {
+    background-image: linear-gradient(yellow, gold);
+}
+
+span[class~="two"] :nth-child(1), span[class~="two"] :nth-child(2) {
+    background-image: linear-gradient(yellow, gold);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(yellow, gold);
+}
