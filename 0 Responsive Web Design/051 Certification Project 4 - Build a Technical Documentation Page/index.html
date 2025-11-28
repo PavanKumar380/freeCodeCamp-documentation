@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Technical Documentation Page</title>
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#HTML_Boilerplate" class="nav-link">HTML Boilerplate</a></li>
+                <li><a href="#Elements_and_Attributes" class="nav-link">Elements and Attributes</a></li>
+                <li><a href="#The_DOCTYPE_Element" class="nav-link">The DOCTYPE Element</a></li>
+                <li><a href="#The_html_Element" class="nav-link">The html Element</a></li>
+                <li><a href="#The_head_Element" class="nav-link">The head Element</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>
+                    HTML (HyperText Markup Language) is the basic build block of the website. It defines the meaning and structure of web content.
+                </p>
+
+                <p>
+                    Hypertext refers to links that connect web pages to one another, either within a single website or between different websites.
+                </p>
+
+                <p>
+                    Markup refers to the special tags, called elements, enclosed in <code>&lt</code> and <code>&gt</code>. Each of these tags has a specific meaning to the browser, as well as accessibility tools, that helps them understand the purpose of the content enclosed within the tags.
+                </p>
+
+                <p>
+                    Some examples of tags include <code>&lthtml&gt</code>, <code>&lthead&gt</code>, and <code>&ltbody&gt</code>.
+                </p>
+
+                <p>
+                    My hope is that this documentation helps you achieve the following:
+                    <ul>
+                        <li>Learn about the various elements of a HTML markup</li>
+                        <li>Gain a basic understanding of how web browsers understand your HTML file</li>
+                        <li>Gain an appreciation for the accessibility features enabled by the semantic nature of certain HTML elements</li>
+                        <li>Feel ready to take the next step of your frontend journey: CSS</li>
+                        <li>Have fun</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="main-section" id="HTML_Boilerplate">
+                <header>HTML Boilerplate</header>
+                <p>
+                    The following are two examples of HTML boilerplates that contain tags that ensure basic functionality of a webpage. (Don't worry about what it all means. We'll get to that in the coming sections.)
+                </p>
+
+                <p>
+                    Minimal:
+                    <code class="block">
+                        &lthtml&gt<br>
+                        &nbsp;&nbsp;&lthead&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtWebpage Title&lt/title&gt<br>
+                        &nbsp;&nbsp;&lt/head&gt<br>
+                        &nbsp;&nbsp;&ltbody&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Webpage Content<br>
+                        &nbsp;&nbsp;&lt/body&gt<br>
+                        &lt/html&gt
+                    </code>
+                </p>
+
+                <p>
+                    Recommended:
+                    <code class="block">
+                        &lt!DOCTYPE html&gt<br>
+                        &lthtml lang="en"&gt<br>
+                        &nbsp;&nbsp;&lthead&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8"&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtWebpage Title&lt/title&gt<br>
+                        &nbsp;&nbsp;&lt/head&gt<br>
+                        &nbsp;&nbsp;&ltbody&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Webpage Content<br>
+                        &nbsp;&nbsp;&lt/body&gt<br>
+                        &lt/html&gt
+                    </code>
+                </p>
+        
+                <p>
+                    Linked with a css file named <code>styles.css</code> (you won't need this until you start learning CSS):
+                    <code class="block">
+                        &lt!DOCTYPE html&gt<br>
+                        &lthtml lang="en"&gt<br>
+                        &nbsp;&nbsp;&lthead&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="UTF-8"&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&ltlink rel="stylesheet" href="styles.css"&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtWebpage Title&lt/title&gt<br>
+                        &nbsp;&nbsp;&lt/head&gt<br>
+                        &nbsp;&nbsp;&ltbody&gt<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Webpage Content<br>
+                        &nbsp;&nbsp;&lt/body&gt<br>
+                        &lt/html&gt
+                    </code>
+                </p>
+            </section>
+
+            <section class="main-section" id="Elements_and_Attributes">
+                <header>Elements and Attributes</header>
+                <p>
+                    An element in HTML is a basic unit of the markup that has its own purpose as understood by the browser. An element in HTML is represeted by its tag.
+                </p>
+
+                <p>
+                    You may have noticed that some elements in the boilerplate have extra information specified within the tag. For example, <code>&lthtml lang="en"&gt</code>. In this case, the extra information <code>lang</code> is called an attribute. It has been defined with a value of <code>en</code>. Giving the <code>&lthtml&gt</code> element an attribute of <code>lang="en"</code> lets the browser (and accessibility tools) know that your webpage is in English.
+                </p>
+
+                <p>
+                    You may also have noticed that some tags in the boilerplate come in pairs, like <code>&lthtml&gt</code> and <code>&lt/html&gt</code>, while other tags are individual, like <code>&ltmeta&gt</code>. The paired tags are called container tags, while the individual tags are called empty tags, void tags, or self-closing tags.
+                </p>
+
+                <p>
+                    Container tags, like the name suggests, are meant to hold content between their opening and closing tag.
+                </p>
+
+                <p>
+                    Empty tags perform various functions either by themselves or based on attributes defined in them.
+                </p>
+
+                <p>
+                    In the next few sections, we shall examine and understand what each element in the boilerplate is.
+                </p>
+            </section>
+
+            <section class="main-section" id="The_DOCTYPE_Element">
+                <header>The DOCTYPE Element</header>
+                <p>
+                    The <code>&lt!DOCTYPE html&gt</code> element is most commonly the first element in any standard html file. It lets the browser know that it is dealing with a html file.
+                </p>
+            </section>
+
+            <section class="main-section" id="The_html_Element">
+                <header>The html Element</header>
+                <p>
+                    This element contains all the markup required for your webpage within its opening tag, <code>&lthtml&gt</code>, and its closing tag <code>&lt/html&gt</code>. All your HTML markup should be within those tags.
+                </p>
+
+                <p>
+                    It is also standard practice to define the language of your webpage in the opening tag of this element, using the <code>lang</code> attribute. For example, <code>&lthtml lang="en"&gt</code>.
+                </p>
+            </section>
+
+            <section class="main-section" id="The_head_Element">
+                <header>The head Element</header>
+                <p>
+                    The <code>&lthead&gt</code> element contains metadata about your webpage, which helps browsers and search engines understand the content of your webpage.
+                </p>
+            </section>
+
+        </main>
+
+    </body>
+</html>
