@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: midnightblue;
+  width: 100vw;
+}
+
+.logo {
+  margin: 0 2rem;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 7rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: skyblue;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: white;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 15rem;
+  margin-top: 6rem;
+}
+
+#hero > h1 {
+  margin-bottom: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+#form input[type="email"] {
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  width: 16rem;
+}
+
+#form input[type="submit"] {
+  background-color: gold;
+  border: 0.1rem solid black;
+}
+
+.btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.feat-cont {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.feat-ico {
+  margin: 1rem;
+}
+
+#reviews {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30vw;
+  border: 0.1rem solid black;
+  border-radius: 0.25rem;
+  background-color: #ccc;
+}
+
+.price-head {
+  background-color: midnightblue;
+  color: skyblue;
+  padding: 1rem;
+}
+
+.price-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price-desc h4 {
+  margin: 1rem;
+}
+
+.price-desc p {
+  margin-bottom: 1rem;
+}
+
+.price-desc button {
+  background-color: gold;
+  border: 0.1rem solid black;
+  margin: 1rem;
+}
+
+footer {
+  min-height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #bbb;
+  padding: 1rem;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 1rem;
+}
