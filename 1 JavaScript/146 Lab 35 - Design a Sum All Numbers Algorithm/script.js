@@ -1,1 +1,1 @@
-const sumAll = arr => Math.min(arr[0], arr[1]) > 1 ? ((Math.max(arr[0], arr[1]) * (Math.max(arr[0], arr[1]) + 1)) / 2) - ((Math.min(arr[0], arr[1]) * (Math.min(arr[0], arr[1]) - 1)) / 2) : (Math.max(arr[0], arr[1]) * (Math.max(arr[0], arr[1]) + 1)) / 2;
+const sumAll = arr => ((Math.max(arr[0], arr[1]) * (Math.max(arr[0], arr[1]) + 1)) / 2) - ((Math.min(arr[0], arr[1]) * (Math.min(arr[0], arr[1]) - 1)) / 2);
