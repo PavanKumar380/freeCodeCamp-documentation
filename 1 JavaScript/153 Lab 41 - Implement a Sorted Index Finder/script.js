@@ -1,0 +1,1 @@
+const getIndexToIns = (arr, n) => arr.length === 0 ? 0 : arr.sort((a, b) => a - b).findIndex(a => a >= n) === -1 ? arr.length : arr.sort((a, b) => a - b).findIndex(a => a >= n);

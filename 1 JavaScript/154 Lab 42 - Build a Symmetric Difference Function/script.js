@@ -1,0 +1,1 @@
+const diffArray = (arr1, arr2) => arr1.filter(ar => !(arr2.includes(ar))).concat(arr2.filter(ar => !(arr1.includes(ar))));
