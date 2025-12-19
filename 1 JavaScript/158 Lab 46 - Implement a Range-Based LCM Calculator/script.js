@@ -18,45 +18,29 @@ function getPrimeArray(n) {
 }
 
 function getPrimeFactors(num) {
-  const arr = getPrimeArray(num);
-  const fact = [];
-  for (const ar of arr) {
+  return getPrimeArray(num).reduce((fact, ar) => {
     while (num % ar === 0 && num > 1) {
       fact.push(ar);
       num /= ar;
     }
-  }
-  return fact;
+    return fact;
+  }, []);
 }
 
-function getLongestRun(arrs, n) {
-  let maxRun = 0;
-  for (const arr of arrs) {
-    let run = 0;
-    for (const ar of arr) {
-      if(ar === n) {
-        run++;
-      }
-    }
-    maxRun = Math.max(run, maxRun);
-  }
-  return maxRun;
-}
+const getLongestRun = (arrs, n) => arrs.reduce((run, arr) => Math.max(arr.filter(ar => ar === n).length, run), 0);
 
 function smallestCommons(arr) {
   const a = Math.max(2, Math.min(arr[0], arr[1]));
   const b = Math.max(arr[0], arr[1]);
-  if(b === 2) {
-    return 2;
+  if(a === b) {
+    return b;
+  }
+  if(b - a === 1) {
+    return a * b;
   }
   const pFactors = [];
   for (let i = a ; i <= b ; i++) {
     pFactors.push(getPrimeFactors(i));
   }
-  const pArray = getPrimeArray(b);
-  let LCD = 1;
-  for (const p of pArray) {
-    LCD *= Math.pow(p,getLongestRun(pFactors, p));
-  }
-  return LCD;
+  return getPrimeArray(b).reduce((LCD, p) => LCD *= Math.pow(p,getLongestRun(pFactors, p)), 1);
 }

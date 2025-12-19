@@ -1,24 +1,5 @@
-function truthCheck(collection, pre) {
-  let val = true;
-  let isNum = 0;
-  for (const ob of collection) {
-    if (typeof ob[pre] === "number") {
-      isNum = 1;
-      break;
-    }
-  }
-  if (!isNum) {
-    for (const ob of collection) {
-      if((ob[pre] == false || ob[pre] === null || !ob.hasOwnProperty(pre)) && (typeof ob[pre] !== "object")) {
-        val = false;
-      }
-    }
-  } else {
-    for (const ob of collection) {
-      if(ob[pre] == false || isNaN(ob[pre]) || ob[pre] === null || !ob.hasOwnProperty(pre)) {
-        val = false;
-      }
-    }
-  }
-  return val;
-}
+const checkNum = (ob, pr) => ob[pr] == false || isNaN(ob[pr]) || ob[pr] === null || !ob.hasOwnProperty(pr);
+
+const checkReg = (ob, pr) => (ob[pr] == false || ob[pr] === null || !ob.hasOwnProperty(pr)) && (typeof ob[pr] !== "object");
+
+const truthCheck = (collection, pre) => !(collection.some(obj => typeof obj[pre] === "number") ? collection.some(obj => checkNum(obj, pre)) : collection.some(obj => checkReg(obj, pre)));

@@ -1,10 +1,1 @@
-function destroyer (arr, ...args) {
-  const destArr = [];
-  for (const ar of arr) {
-    if(args.includes(ar)) {
-      continue;
-    }
-    destArr.push(ar);
-  }
-  return destArr;
-}
+const destroyer = (arr, ...args) =>  arr.filter(ar => !args.includes(ar));
