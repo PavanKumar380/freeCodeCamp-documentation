@@ -1,0 +1,116 @@
+:root {
+  --body-bg-light: white;
+  --body-text-light: black;
+  --body-bg-dark: #212121;
+  --body-text-dark: #B3E5FC;
+  --body-bg-royal: #360F67;
+  --body-text-royal: gold;
+  --body-bg-oak: #3E2723;
+  --body-text-oak: #388E3C;
+  --button-bg-light: #FFCDD2;
+  --button-bg-light-hover: #E57373;
+  --button-text-light: black;
+  --button-bg-dark: #3B3B3B;
+  --button-bg-dark-hover: #0D0D0D;
+  --button-text-dark: #B3E5FC;
+  --button-bg-royal: #4A148C;
+  --button-bg-royal-hover: #21093E;
+  --button-text-royal: gold;
+  --button-bg-oak: #68423B;
+  --button-bg-oak-hover: #2E1D1A;
+  --button-text-oak: #388E3C;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.theme-light {
+  background-color: var(--body-bg-light);
+  color: var(--body-text-light);
+}
+
+body.theme-dark {
+  background-color: var(--body-bg-dark);
+  color: var(--body-text-dark);
+}
+
+body.theme-royal {
+  background-color: var(--body-bg-royal);
+  color: var(--body-text-royal);
+}
+
+body.theme-oak {
+  background-color: var(--body-bg-oak);
+  color: var(--body-text-oak);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+li:hover {
+  background-color: lightgrey;
+}
+
+#status {
+  text-align: center;
+  min-height: 20px;
+}
+
+#theme-switcher-button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#theme-switcher-button.theme-light {
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+}
+
+#theme-switcher-button.theme-light:hover {
+  background-color: var(--button-bg-light-hover);
+}
+
+#theme-switcher-button.theme-dark {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+}
+
+#theme-switcher-button.theme-dark:hover {
+  background-color: var(--button-bg-dark-hover);
+}
+
+#theme-switcher-button.theme-royal {
+  background-color: var(--button-bg-royal);
+  color: var(--button-text-royal);
+}
+
+#theme-switcher-button.theme-royal:hover {
+  background-color: var(--button-bg-royal-hover);
+}
+
+#theme-switcher-button.theme-oak {
+  background-color: var(--button-bg-oak);
+  color: var(--button-text-oak);
+}
+
+#theme-switcher-button.theme-oak:hover {
+  background-color: var(--button-bg-oak-hover);
+}
