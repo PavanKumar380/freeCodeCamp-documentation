@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #212F3D;
+  --blue: #154360;
+  --blue-dark: #0D293B;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.weather-info-wrap {
+  height: 60%;
+  max-height: 500px;
+  width: 95%;
+  max-width: 800px;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+#weather-info {
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+}
+
+#primary-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#secondary-info {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#secondary-info-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#secondary-info-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-wrap {
+  height: 20%;
+  max-height: 100px;
+  width: 95%;
+  max-width: 800px;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-wrap > span {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#location-selector {
+  height: 40%;
+  width: 20%;
+  min-width: 120px;
+  text-align: center;
+}
+
+#get-weather-btn {
+  height: 40%;
+  width: 20%;
+  min-width: 120px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+}
+
+#get-weather-btn:hover {
+  background-color: var(--blue-dark);
+}
